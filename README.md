@@ -18,4 +18,4 @@ token = "Token Key"
 ```
 # Start params
 
-```config-path = "Path conf"```
+```config-path = "Path conf.toml"```
