@@ -50,6 +50,7 @@ func (j *Auth) Get_User(t string) (Claims, error)  {
 	if err != nil {
 		return Claims, err
 	}
+	
 	if !token.Valid {
 		err := errors.New("token unvlaid")
 		return Claims, err
