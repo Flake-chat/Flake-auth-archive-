@@ -1,13 +1,20 @@
 package api
 
+import (
+	"github.com/Flake-chat/Flake-auth/auth"
+	"github.com/Flake-chat/Flake-auth/store"
+)
+
 type Config struct {
-	Addr string `toml:"addr"`
+	Addr     string `toml:"addr"`
 	LogLevel string `toml:"log_level"`
+	Store    *store.Config
+	Auth     *auth.Config
 }
 
 func NewConfig() *Config {
 	return &Config{
-		Addr: ":8080",
+		Addr:     ":8080",
 		LogLevel: "debug",
 	}
 }
