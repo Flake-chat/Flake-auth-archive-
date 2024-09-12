@@ -19,3 +19,34 @@ token = "Token Key"
 # Start params
 
 ```config-path = "Path conf.toml"```
+
+# EndPoints 
+
+# /reg
+
+```
+{
+    name: string,
+    email: string,
+    password: string,
+    fullname: string,
+}
+```
+
+# /login
+
+```
+{
+    name: string
+    password: string,
+}
+```
+
+# /token 
+
+```
+{
+    token: string,
+}
+
+```

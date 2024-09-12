@@ -15,6 +15,7 @@ var (
 func init() {
 	flag.StringVar(&confPath, "config-path", "config/server.toml", "Path conf")
 }
+
 func main() {
 	flag.Parse()
 	config := api.NewConfig()
