@@ -22,25 +22,29 @@ token = "Token Key"
 
 # EndPoints 
 
-```
-/reg
+# /reg
 
+```
 {
     name: string,
     email: string,
     password: string,
     fullname: string,
 }
+```
 
-/login
+# /login
 
+```
 {
     name: string
     password: string,
 }
+```
 
-/token 
+# /token 
 
+```
 {
     token: string,
 }
